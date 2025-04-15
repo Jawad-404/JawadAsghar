@@ -282,6 +282,7 @@ span {
 }
 .skill:hover {
   transform: scale(1.1);
+  box-shadow: 0 0 10px  #585d99;
 }
 .skill img {
   margin-top: 20px;
@@ -321,7 +322,7 @@ span {
   background-color: var(--gradient-bg);
   padding: 1.5rem;
   border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.114);
   color: #f0f0f0;
   font-weight: 600;
   transition: transform 0.3s ease;
@@ -334,13 +335,14 @@ span {
     
 }
 .certification-box:hover{
+  box-shadow: 0 0 10px  #585d99;
   transform: translateY(-5px);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 .experience-box:hover,
 .Projects-box:hover,
 .Education-box:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 10px  #585d99;
 }
 .experience-box ul,
 .Projects-box ul,
@@ -557,6 +559,7 @@ footer li a:hover {
     transform: rotateY(360deg);
   }
 }
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;

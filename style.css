@@ -34,7 +34,9 @@ body {
 .text p {
   color: var(--text-secondary);
 }
-
+.About{
+  height: 100vh;
+}
 /* Buttons */
 .About .Button {
   background-color: var(--highlight);
@@ -535,17 +537,7 @@ footer li a:hover {
   color: var(--highlight);
   transform: scale(1.2);
 }
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
-@media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
 @keyframes typing {
   from {
     width: 0;
@@ -566,12 +558,142 @@ footer li a:hover {
     transform: rotateY(360deg);
   }
 }
-
 @media (max-width: 768px) {
-  .text h2 {
-    font-size: 1.8rem;
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
+
+  .right ul {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  .About {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-grid,
+  .Projects-grid,
+  .Education-grid,
+  .certification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Study {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .study-text {
+    margin-top: 10px;
+  }
+
+  .certificate-text,
+  .para {
+    text-align: center;
+  }
+
+  .certificate-image {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contact-form {
+    padding: 0 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section ul {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+/* Mobile Phones (480px and down) */
+@media (max-width: 480px) {
+  h2, h3, h4 {
+    font-size: 1.2rem;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+  }
+
+  .text-group h2 {
+    font-size: 1.4rem;
+  }
+
+  .right ul li a {
+    font-size: 0.95rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-icon {
+    width: 50px;
+    height: auto;
+  }
+
+  .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .text h3 {
+    font-size: 1.1rem;
+  }
+
   .text p {
     font-size: 0.95rem;
+  }
+
+  .image {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .footer-section.social-icons img {
+    width: 30px;
+    margin: 5px;
+  }
+}
+
+/* Ultra Small Devices (380px and below) */
+@media (max-width: 380px) {
+  .right ul li {
+    padding: 4px 0;
+  }
+
+  .certificate-image {
+    width: 100%;
+  }
+
+  .footer-text h5 {
+    font-size: 0.75rem;
+  }
+
+  .send button {
+    width: 100%;
   }
 }

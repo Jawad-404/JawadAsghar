@@ -149,7 +149,6 @@ nav li a:hover {
   border-radius: 200px;
   animation: animateLOGO 2s ease-out 3s infinite;
 }
-
 .navbar {
   display: flex;
   align-items: center;

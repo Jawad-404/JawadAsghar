@@ -148,7 +148,7 @@ span {
   display: inline-block;
   vertical-align: bottom;
   max-width: 320px;
-  width: 100%;
+  width: 80%;
   overflow: hidden;
   white-space: nowrap;
   border-right: 1px solid #e49760;
@@ -506,12 +506,6 @@ textarea {
   padding: 0;
 }
 
-/* .footer ul li {
-  padding: 5px 10px;
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
-  font-weight: bold;
-} */
-
 .footer ul li a {
   text-decoration: none;
   color: var(--text-main);
@@ -733,7 +727,54 @@ textarea {
   .social-icons {
     gap: 20px;
   }
+  .Education-box {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .Study {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .study-text {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .para {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .para p {
+    text-align: center;
+  }
+
+  .uettaxila-logo,
+  .clg-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+  }
+  
+  /* Ensure proper separation between education entries */
+  .Education-grid {
+    gap: 25px;
+  }
+  
+  /* Clear any unwanted floats */
+  .Education-box::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
+
 
 /* Extra Small Devices */
 @media (max-width: 375px) {

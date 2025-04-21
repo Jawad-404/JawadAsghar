@@ -148,7 +148,7 @@ span {
   display: inline-block;
   vertical-align: bottom;
   max-width: 320px;
-  width: 80%;
+  width: 60%;
   overflow: hidden;
   white-space: nowrap;
   border-right: 1px solid #e49760;
@@ -601,7 +601,9 @@ textarea {
     width: 100%;
     justify-content: center;
   }
-  
+  /* .text-group{
+    
+  } */
   .right {
     width: 100%;
   }
@@ -660,6 +662,11 @@ textarea {
     width: auto;
     border-right: none;
     animation: none;
+    /* width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid var(--primary);
+    animation: typing 2s steps(15, end), cursor 0.7s steps(15, end) infinite; */
   }
   
   .navbar {
@@ -781,7 +788,13 @@ textarea {
   .logo-icon {
     width: 40px;
   }
-  
+  .text-group {
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid var(--primary);
+    animation: typing 2s steps(15, end), cursor 0.7s steps(15, end) infinite;
+  }
   .text-group h2 {
     font-size: 1rem;
   }

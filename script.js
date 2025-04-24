@@ -11,12 +11,12 @@
       return;
     }
 
-    // Simulate sending message (replace this with backend logic if needed)
-    console.log("Message sent:", {
-      name,
-      email,
-      message
-    });
+    // // Simulate sending message (replace this with backend logic if needed)
+    // console.log("Message sent:", {
+    //   name,
+    //   email,
+    //   message
+    // });
 
     alert("Thanks, " + name + "! Your message has been sent 🚀");
 
